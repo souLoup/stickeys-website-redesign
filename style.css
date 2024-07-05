@@ -1,0 +1,457 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+/*CSS Reset */
+
+html, body {
+    font-size: 16px;
+    line-height: normal;
+    font-family: "Dosis";
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Universal Styles */
+
+@font-face {
+    font-family: "Dosis";
+    src: url(/Resources/Dosis/Dosis-VariableFont_wght.ttf) format(TrueType);
+}
+
+p {
+    line-height: 2;
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-size: 1.875rem;
+}
+
+/* Header Section */
+
+#header {
+    display: flex;
+    position: fixed;
+    height: 6rem;
+    border-bottom: 1px solid hsl(0, 0%, 0%);
+    width: 100%;
+    background-color: hsl(84, 58%, 40%);
+    z-index: 100;
+    text-shadow: 1px 1px 2px black;
+}
+
+nav {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+#logo {
+    flex: 1 1 5%;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    margin: 1rem;
+    max-width: 12rem;
+   
+}
+
+.leftnav{
+    display: flex;
+    width: 25%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftnav a {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    flex: 1 1;
+    font-size: 1.5rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.rightnav {
+    display: flex;
+    width: 32%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.rightnav a {
+    
+    font-size: 1.35rem;
+    text-decoration: none;
+    color:hsl(0, 0%, 100%);
+    text-shadow: 1px 1px 2px black;
+    line-height: 1.75;
+    font-weight: 600;
+}
+
+.rightnav a:first-child {
+    align-self: center;
+    border-right: 3px solid black;
+    height: 4rem;
+    padding-right: 1.5rem;
+    cursor: text;
+}
+
+.rightnav img {
+    height: 40px;
+    width: 40px;
+    color: hsl(0, 0%, 100%);
+}
+
+/* Hero Image Section */
+
+#hero {
+    display: flex;
+    transform: translateY(3rem);
+    min-width: 100%;
+    height: 51rem;
+    background-color: hsl(0, 0%, 50%);
+}
+
+.hero-image {
+    background-image: url(/Resources/images/purplebud_closeup.jpeg);
+    background-repeat: no-repeat;
+    background-position: 65% 10%;
+    background-size: cover;
+    background-blend-mode: overlay;
+    opacity: 0.85;
+    width: 100%;
+ 
+}
+
+.cta-box {
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    width: 35rem;
+    position: relative;
+    background-color:hsla(84, 58%, 40%, 1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 7%;
+    flex: 1;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 2px black;
+}
+
+.cta-box h1 {
+    font-size: 2.75rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.cta-box h2 {
+    font-size: 2.25rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.cta-box button {
+    height: 3rem;
+    width: 10rem;
+    padding: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    background-color: hsla(257, 27%, 30%, 1);
+    border-radius: 5%;
+    font-weight: bold;
+    box-shadow: inset 20px 20px 30px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 2px black;
+}
+
+/* Feature Cards Section */
+
+.features-container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    top: 94.7%;
+    width: 100%;
+    align-items: center;
+    background-color: hsla(84, 58%, 40%, 1);
+}
+
+.features-container h2 {
+    margin: 1.5rem 0 1rem;
+    flex: 1;
+    font-size: 2.25rem;
+    color: hsl(0, 0%, 100%);
+    text-shadow: 1px 1px 2px black;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 10rem;
+    flex-wrap: wrap;
+}
+
+div.feature1,
+div.feature2,
+div.feature3 {
+   display: flex;
+   flex-direction: column;
+   flex: 1 1 auto;
+   margin: 1.25rem;
+   width: 30rem;
+   height: 30rem;
+   max-width: 40%;
+   background-color: orange;
+   border: 1px solid black;
+   border-radius: 10%;
+   color: hsl(0, 0%, 100%);
+   font-weight: bold;
+   text-shadow: 1px 1px 2px black;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.card-content {
+    width: 60%;
+    height: 70%;
+    padding: 0.5rem 1rem;
+    background-color:hsla(0, 0%, 50%, 0.8);
+    border-radius: 10%;
+}
+
+.card-content > p {
+    padding-top: 2rem;
+    text-align: justify;
+}
+
+.card-content h3 {
+    padding-top: 0.75rem;
+    background-color: hsla(84, 58%, 40%, 1);
+    transform: translateY(40%);
+    line-height: 1.5;
+}
+
+div.feature1 {
+    background-image: url(/Resources/images/plant_closeup.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+div.feature2 {
+    background-image: url(/Resources/images/delivered-bag.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+div.feature3 {
+    background-image: url(/Resources/images/weighing_product.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Featured Products Section */
+
+#products-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 60rem;
+    background-color:hsla(0, 0%, 85%, 0.8);
+    justify-content: space-evenly;
+}
+
+#products-container h2 {
+    font-size: 2.25rem;
+    flex: 1 1;
+    color: hsl(0, 0%, 100%);
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    padding-top: 2rem;
+    min-width: 100%;
+}
+
+
+.product-box {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 40%;
+    background-color: hsla(84, 58%, 40%, 1);
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.product-box img {
+    object-fit: contain;
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    padding: 1.5rem 2rem 0.5rem 2rem;
+
+}
+
+.product-box h3 {
+    padding-bottom: 0.5rem;
+    color: hsl(0, 0%, 100%);
+    text-shadow: 1px 1px 2px black;
+}
+
+.pre-roll {
+    justify-content: space-between;
+}
+/* Newsletter CTA & Form */
+
+#newsletter-container {
+    width: 100%;
+    height: 25rem;
+    background-color: hsla(84, 58%, 40%, 1);
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    text-shadow: 1px 1px 2px black;
+}
+
+#newsletter-container h2 {
+    font-size: 2.25rem;
+    padding: 3rem;
+}
+
+#newsletter-container h3 {
+    padding: 2rem;
+    font-size: 1.75rem;
+}
+
+/* Form Styling */
+
+form {
+    border: 7px solid #f1f1f1;
+  }
+
+.container {
+    padding: 20px 0 20px;
+    background-color: hsla(84, 58%, 40%, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+input[type=text], input[type=submit] {
+    width: 50%;
+    padding: 12px;
+    margin: 8px 0 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+input[type=submit] {
+    background-color: hsla(257, 27%, 30%, 1);
+    color: white;
+    border: none;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: inset 20px 20px 30px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 5%;
+    font-weight: bold;
+  }
+
+input[type=submit]:hover {
+    opacity: 0.8;
+  }
+
+/*Footer Section */
+
+footer {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 7rem;
+    margin-top: 4.8rem;
+    background-color: hsla(0, 0%, 50%, 0.8);
+    justify-content: space-between;
+    transform: translateY(100%);
+    border-top: 1px solid hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    text-shadow: 1px 1px 2px black;
+}
+
+.footer-left {
+    width: 20%;
+    padding: 0.5rem;
+}
+
+.footer-left h3 {
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.footer-right {
+    padding: 0.5rem;
+}
+
+.footer-right h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.footer-right ul{
+    width:  100%;
+    text-align: justify;
+}
+
+.hours li {
+    text-align: center;
+}
