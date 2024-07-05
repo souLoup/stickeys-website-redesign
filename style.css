@@ -59,7 +59,7 @@ table {
 
 @font-face {
     font-family: "Dosis";
-    src: url(/Resources/Dosis/Dosis-VariableFont_wght.ttf) format(TrueType);
+    src: url(/../Resources/Dosis/Dosis-VariableFont_wght.ttf) format(TrueType);
 }
 
 p {
@@ -250,7 +250,6 @@ div.feature3 {
    width: 30rem;
    height: 30rem;
    max-width: 40%;
-   background-color: orange;
    border: 1px solid black;
    border-radius: 10%;
    color: hsl(0, 0%, 100%);
