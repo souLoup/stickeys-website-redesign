@@ -59,7 +59,7 @@ table {
 
 @font-face {
     font-family: "Dosis";
-    src: url(/../../Dosis/Dosis-VariableFont_wght.ttf) format(TrueType);
+    src: url(stickeys-flexbox-biz-site/Resources/Dosis/Dosis-VariableFont_wght.ttf) format(TrueType);
 }
 
 p {
@@ -160,7 +160,7 @@ nav {
 }
 
 .hero-image {
-    background-image: url(/../../Resources/images/purplebud_closeup.jpeg);
+    background-image: url(stickeys-flexbox-biz-site/Resources/images/purplebud_closeup.jpeg);
     background-repeat: no-repeat;
     background-position: 65% 10%;
     background-size: cover;
@@ -281,19 +281,19 @@ div.feature3 {
 }
 
 div.feature1 {
-    background-image: url(/../../Resources/images/plant_closeup.jpeg);
+    background-image: url(stickeys-flexbox-biz-site/Resources/images/plant_closeup.jpeg);
     background-position: center;
     background-size: cover;
 }
 
 div.feature2 {
-    background-image: url(/../../Resources/images/delivered-bag.jpeg);
+    background-image: url(stickeys-flexbox-biz-site/Resources/images/delivered-bag.jpeg);
     background-position: center;
     background-size: cover;
 }
 
 div.feature3 {
-    background-image: url(/../../Resources/images/weighing_product.jpeg);
+    background-image: url(stickeys-flexbox-biz-site/Resources/images/weighing_product.jpeg);
     background-position: center;
     background-size: cover;
 }
